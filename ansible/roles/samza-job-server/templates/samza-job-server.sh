@@ -8,7 +8,7 @@
 ### END INIT INFO
 
 DESC="Samza-Job-Server Daemon"
-NAME=/usr/bin/python
+NAME=/usr/bin/python3
 LOGFILE="/var/log/samza-job-server/"
 SCRIPTNAME=/etc/init.d/samza-job-server
 PID="/var/run/samza-job-server.pid"
