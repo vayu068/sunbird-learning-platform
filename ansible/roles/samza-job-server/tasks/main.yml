@@ -4,7 +4,7 @@
     - /home/hduser/samza-jobs
   become: yes
 - name: Install python
-  apt: name=python state=present
+  apt: name=python3 state=present
   become: yes
 - name: Copy init file
   template: src=samza-job-server.sh dest=/etc/init.d/samza-job-server mode=755
