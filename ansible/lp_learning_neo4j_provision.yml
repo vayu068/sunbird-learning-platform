@@ -1,4 +1,4 @@
-- import_playbook: artifacts-download.yml
+# - import_playbook: artifacts-download.yml
   vars:
     artifact: "{{ neo4j_zip }}"
     artifact_path: "{{ playbook_dir }}/artifacts/{{ artifact }}"
