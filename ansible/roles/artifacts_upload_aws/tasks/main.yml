@@ -1,0 +1,2 @@
+- name: Download from AWS Object storage
+  shell: "aws s3 cp s3://{{ sunbird_artifact_storage_account_name }}/{{ artifacts_container }}/{{ artifact }} {{ artifact_path }}"
