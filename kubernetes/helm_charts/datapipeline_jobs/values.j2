@@ -270,9 +270,7 @@ questionset-publish:
     }
     print_service.base_url = "{{ kp_print_service_base_url }}"
     cloud_storage_type="{{ cloud_store }}"
-   
     azure_storage_container="{{ azure_public_container }}"
-
     master.category.validation.enabled ="{{ master_category_validation_enabled }}"
 
   flink-conf: |+
@@ -450,7 +448,6 @@ asset-enrichment:
     }
     content_youtube_apikey="{{ youtube_api_key }}"
     cloud_storage_type="{{ cloud_store }}"
-   
     azure_storage_container="{{ azure_public_container }}"
 
   flink-conf: |+
@@ -509,9 +506,7 @@ auto-creator-v2:
       content.basePath = "{{ kp_content_service_base_url }}"
     }
     cloud_storage_type="{{ cloud_store }}"
-  
     azure_storage_container="{{ azure_public_container }}"
-
     source {
       baseUrl="{{ source_base_url }}"
     }
@@ -807,9 +802,7 @@ content-publish:
     search.document.type = "cs"
 
     cloud_storage_type="{{ cloud_store }}"
- 
     azure_storage_container="{{ azure_public_container }}"
-
     master.category.validation.enabled ="{{ master_category_validation_enabled }}"
     service {
       print.basePath = "{{ kp_print_service_base_url }}"
